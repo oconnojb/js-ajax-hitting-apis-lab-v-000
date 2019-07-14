@@ -75,8 +75,8 @@ function displayBranches() {
 }
 
 function getBranches(el) {
-  const repo = el.dataset.zrepo;
-  const owner = el.dataset.zun;
+  const repo = el.dataset.repository;
+  const owner = el.dataset.username;
 
   const req = new XMLHttpRequest();
   req.addEventListener('load', displayBranches);
